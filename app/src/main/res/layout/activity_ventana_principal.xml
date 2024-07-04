@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ventana_principal"
+    android:background="@color/Fondo_frame">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Milky"
+        android:textColor="#543310"
+        android:textSize="48sp"
+        tools:ignore="MissingConstraints"
+        android:fontFamily="@font/aclonica"/>
+
+    <GridLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginTop="20dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:rowCount="2"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.766">
+
+        <Button
+            android:id="@+id/button_ganado"
+            android:layout_width="35dp"
+            android:layout_height="58dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="0dp"
+
+            android:backgroundTint="@color/Color_boton"
+            android:drawableTop="@drawable/ganado"
+            android:drawablePadding="1dp"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="onClick"
+            android:text="Ganado"
+            android:textColor="@color/Letras_boton"
+            android:textColorLink="#B3E2A7"
+            android:textIsSelectable="false" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:backgroundTint="@color/Color_boton"
+            android:text="Registro de producción"
+            android:textColor="@color/Letras_boton"
+            android:fontFamily="@font/roboto_bold"
+            android:id="@+id/Registro_produccion"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/registro"/>
+
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/Color_boton"
+            android:text="Registro de establo"
+            android:textColor="@color/Letras_boton"
+            android:fontFamily="@font/roboto_bold"
+            android:id="@+id/Registro_establo"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/establo"/>
+
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/Color_boton"
+            android:text="Gráficas de producción"
+            android:textColor="@color/Letras_boton"
+            android:fontFamily="@font/roboto_bold"
+            android:id="@+id/Grafica"
+            android:onClick="onClick"
+            android:drawableTop="@drawable/grafico"/>
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="vaca_inicio"
+        android:src="@drawable/vaca2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cerrar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:backgroundTint="#F44336"
+        android:text="Cerrar sesión"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="MissingConstraints"
+        android:onClick="onClick"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

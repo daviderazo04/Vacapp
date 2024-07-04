@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio_sesion"
+    android:background="@color/Fondo_frame"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Iniciar_sesion"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"/>
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:contentDescription="@string/imagen_inicio_y_registro"
+            android:src="@drawable/vaca"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            >
+            <EditText
+                android:id="@+id/NombreU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NombreU"
+                android:drawableStart="@drawable/icono_nombre"
+                android:drawablePadding="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            app:passwordToggleEnabled="true"
+            >
+
+            <EditText
+                android:id="@+id/contrasenia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Contrasenia"
+                android:drawableStart="@drawable/icon_lock"
+                android:drawablePadding="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/ingresar"
+            android:layout_width="250sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/Color_boton"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/Ingresar"
+            android:textColor="@color/Letras_boton"
+            >
+
+        </Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="190sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Milky</string>
+    <string name="Bienvenido_a_VACAPP" translatable="false">Bienvenido a Milky</string>
+    <string name="Iniciar_sesion" translatable="false">Iniciar sesión</string>
+    <string name="registrarse" translatable="false">Registrarse</string>
+    <string name="Ingresar" translatable="false">Ingresar</string>
+    <string name="NombreU" translatable="false">Ingrese su nombre de usuario</string>
+    <string name="Contrasenia" translatable="false">Ingrese su contraseña</string>
+    <string name="confirmarContrasenia" translatable="false">Confirme su contraseña</string>
+    <string name="imagen_inicio_y_registro" translatable="false">Imagen_inicio_y_registro</string>
+    <string name="ingresar" translatable="false">Ingresar</string>
+    <string name="tengo_una_cuenta" translatable="false">Tengo una cuenta</string>
+
+    <string-array name="razas_de_vaca">
+        <item>Holstein</item>
+        <item>Jersey</item>0
+        <item>Brown Swiss</item>
+        <item>Simmental</item>
+        <item>Gyr</item>
+        <item>Montbeliarde</item>
+        <item>Normando</item>
+        <item>Criollo</item>
+    </string-array>
+    <string-array name="razas_de_vaca_buscar">
+        <item>Cualquiera</item>
+        <item>Holstein</item>
+        <item>Jersey</item>
+        <item>Brown Swiss</item>
+        <item>Simmental</item>
+        <item>Gyr</item>
+        <item>Montbeliarde</item>
+        <item>Normando</item>
+        <item>Criollo</item>
+    </string-array>
+
+    <string-array name="edades">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="edades_buscar">
+        <item>Cualquiera</item>
+        <item>1-5</item>
+        <item>5-10</item>
+        <item>10-15</item>
+        <item>15+</item>
+    </string-array>
+
+    <string-array name="codigo_establo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="codigo_establo_buscar">
+        <item>Cualquiera</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="frecuencia">
+        <item>Últimos 7 días</item>
+        <item>Último mes</item>
+    </string-array>
+</resources>

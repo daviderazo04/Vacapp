@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FDFFE2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_vaca">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="411dp"
+            android:layout_height="40dp"
+            android:background="#74512D"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="Mi Ganado"
+            android:textColor="#F8F4E1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="152dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Milky"
+        android:textColor="#543310"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="346dp"
+        android:layout_height="57dp"
+        android:fontFamily="casual"
+        android:text="Aquí podras cargar o consultar toda la información acerca de tus vacas."
+        android:textColor="#AF8F6F"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="131dp"
+        android:layout_height="106dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="345dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="32dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.413"
+        app:rowCount="2">
+
+        <Button
+            android:id="@+id/IVaca_btn"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#B3E2A7"
+            android:drawableTop="@drawable/insertar"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="onClick"
+            android:text="Nueva Vaca"
+            android:textColor="#1A2130"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/DVaca_btn"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#B3E2A7"
+            android:drawableTop="@drawable/eliminar"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="onClick"
+            android:text="Eliminar Vaca"
+            android:textColor="#1A2130"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/UVaca_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#B3E2A7"
+            android:drawableTop="@drawable/actualizar"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="onClick"
+            android:text="Actualizar Vaca"
+            android:textColor="#1A2130"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/BVaca_btn"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="#B3E2A7"
+            android:drawableTop="@drawable/buscar"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="onClick"
+            android:text="Buscar Vacas"
+            android:textColor="#1A2130"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/Regresar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FDFFE2"
+        android:drawableTop="@drawable/regresar"
+        android:fontFamily="@font/comic_neue_bold"
+        android:onClick="onClick"
+        android:text="Regresar"
+        android:textColor="#1A2130"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Nombre_app">#00D426</color>
+    <color name="nformacion_frame">#AF8F6F</color>
+    <color name="Letras_boton">#1A2130</color>
+    <color name="Color_boton">#B3E2A7</color>
+    <color name="Nombre_frame">#F8F4E1</color>
+    <color name="Fondo_nombre_frame">#AF8F6F</color>
+    <color name="Fondo_frame">#FDFFE2</color>
+</resources>
