@@ -1,5 +1,6 @@
 # Vacapp
-Aplicación de Control de Ganado y Registros de Producción Lechera<br>
+Aplicación de Control de Ganado y Registros de Producción Lechera<br><br>
+# En estas imágenes podrás visualizar un poco las interfaces de la aplicación:
 ![Descripción de la imagen](https://github.com/daviderazo04/Vacapp/blob/317666c5541c9a62c87683330ef391cc6db57797/im%C3%A1genes%20app/1.png)
 ![Descripción de la imagen](https://github.com/daviderazo04/Vacapp/blob/317666c5541c9a62c87683330ef391cc6db57797/im%C3%A1genes%20app/2.png)
 ![Descripción de la imagen](https://github.com/daviderazo04/Vacapp/blob/317666c5541c9a62c87683330ef391cc6db57797/im%C3%A1genes%20app/3.png)
